@@ -1,0 +1,23 @@
+@model newFAQModel
+
+@{
+    ViewData["Title"] = "FAQ";
+}
+
+<div class="text-center">
+    <p>Frequently Asked Questions</p>
+</div>
+
+<div class="text-left">
+    <h1 class="display-4">FAQ</h1>
+    <p><h6>What is The Alchemist About?</h6></p>
+    <p>There is a link to an about page up above.</p>
+    <p><h6>What are you using to create it?</h6></p>
+    <p>I am currently using unreal engine, but am open to trying others out.</p>
+    <p><h6>How much progress have you made?</h6></p>
+    <p>Not much, Ive made some minor stuff to test out the engine and that is about it.</p>
+</div>
+
+<div class="text-bottom">
+    @Html.TextBoxFor(m => m.newQuestion)
+</div>
